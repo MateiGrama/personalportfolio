@@ -1,0 +1,146 @@
+<div id="wrapperAbout" ng-init="init()">
+  
+  <div id="loading" ng-show="loading">
+    <img id="loadingGif" src="\images\loading.gif"/>
+  </div>
+
+  <header id="headerAbout">
+    <!-- era 'header' da trebuie schimbat.. -->
+    <a href="#" class="image avatar">
+      <img class="image avatar" src="images/avatar.jpg" alt="" />
+    </a>
+    <h1>
+      <strong>
+        TL;DR: Main Qualities<br />
+      </strong>
+        Teamwork orientation<br />
+      <strong>  
+        Willingness to learn<br />
+      </strong>
+        Enthuziasm 
+    </h1>
+  </header>
+
+  <!-- Main -->
+  <div id="mainAbout">
+
+    <!-- One -->
+    <section id="one">
+      <header class="major">
+        <h2>
+          Entrepreneurial focused programmer with considerable development expertise in the Web, Mobile and Embedded technology.
+        </h2>
+      </header>
+      <p>The various ways in which technology improve our lives captivate me. I somehow enjoy making decisions that will take me out of my comfort zone and involve learning something new. More precisely, I get enthusiastic about latest technologies on artificial intelligence, virtual reality, cloud computing and the Internet of Things. </p>
+    </section>
+
+    <!-- Two -->
+    <section id="two">
+
+      <div class="expendButton">
+        <h2>
+          <span class="fa "
+                ng-class="{'fa-plus-circle': !education , 'fa-minus-circle': education}"
+                ng-click="education = !education">  education
+          </span>
+        </h2>
+      </div>
+
+      <div class="expendDiv" ng-show="education">
+        <h6>Imperial College London </h6>
+        <p>Bachelor of Engineering - BE, Computing</p>
+        <h6>National High School of Informatics "Tudor Vianu" </h6>
+        <p>Mathematics and Intensive Informatics Curriculum</p>
+      </div>
+
+
+      <div class="expendButton">
+        <h2>
+          <span class="fa "
+                ng-class="{'fa-plus-circle': !courses , 'fa-minus-circle': courses}"
+                ng-click="courses = !courses">
+              courses
+          </span>
+        </h2>
+      </div>
+
+      <div class="expendDiv" ng-show="courses">
+        
+          <ul style="list-style-type: disc">
+            <li>IC3 GS4 - Computing Fundamentals </li>
+            <li>IC3 GS4 - Key Aplications</li>
+            <li>IC3 GS4 - Living Online </li>
+            <li>IT Essentials from Cisco Networking Academy </li>
+            <li>IoE – Series 1 from Cisco Networking Academy </li>
+            <li>Linux Embedded Challange Workshop at Freescale</li>
+            <li>'Bussiness Management' organized by Bucharest Hall</li>
+            <li>'Project Mangement and Leadership 'organized by Bucharest Hall</li>
+          </ul>
+      </div>
+
+      <div class="expendButton">
+        <h2>
+          <span class="fa "
+                ng-class="{'fa-plus-circle': !awards , 'fa-minus-circle': awards}"
+                ng-click="awards = !awards">  awards
+          </span>
+        </h2>
+      </div>
+
+      <div class="expendDiv" ng-show="awards">
+        <ul style="list-style-type: disc">
+            <li>3rd Prize - Microsoft Internet of Things Hackaton</li>
+            <li>2nd Prize - Freescale Linux Embedded Challage</li>
+            <li>1st Prize - EmpowerSoft</li>
+            <li>2nd Prize - National Science and Engineering Fair</li>
+            <li>1st Prize - Electrical Engineering HighTech</li>
+            <li>Silver Medal - Infomatrix Hardware Control Section</li>
+            <li>Honorable Mention - National Programming Contest "Grigore Moisil"</li>
+            <li>'Best Product' Award - Microsoft Youthspark Mentorship Program "Oppening Opportunities"</li>
+            
+          </ul>
+      </div>
+
+
+      <div class="expendButton">
+        <h2>
+          <span class="fa "
+                ng-class="{'fa-plus-circle': !hobbies , 'fa-minus-circle': hobbies}"
+                ng-click="hobbies = !hobbies">
+            hobbies
+          </span>
+        </h2>
+      </div>
+
+      <div class="expendDiv" ng-show="hobbies">
+
+        <p>Besides programming, fencing is my biggest passion. I've been practicing the "Physical Chess" since I was 9 which helped me sharpen my mental agility and strategic thinking. I also enjoy hiking and computer games.</p>
+      </div>
+      <br/>
+      <h3>Check out my projects!</h3>
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          <p>This website is basically a digital portfolio which accompanies my github account.</p>
+        </article>        
+      </div>
+
+      <ul class="actions">
+        <li><a href="#projects" class="button">Full Portfolio</a></li>
+      </ul>
+    </section>
+  </div>
+
+
+  <section id="footerAbout">
+    <ul class="icons">  
+      <li><a href="https://twitter.com/MateiGrama" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="https://github.com/MateiGrama" class="fa fa-github"><span class="label">Github</span></a></li>
+      <li><a href="https://linkedin.com/in/mateigrama" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+      <li><a href="https://www.facebook.com/matheo.dagrama" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="mailto:grama.matei.george@gmail.com" class="fa fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <p class="copyright">&copy; Matei Grama ~2017.</p>
+  </section>
+
+
+</div>

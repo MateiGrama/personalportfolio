@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html >
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width"> 
+
+    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+    <link href="css/index.css" rel="stylesheet" />
+    
+    <!-- <link href="css/phantomTemplate.css" rel="stylesheet" /> -->
+    
+    <script src="scripts/lib/angular.min.js"></script>
+    <script src="scripts/lib/angular-animate.min.js"></script>
+    <script src="scripts/lib/angular-route.min.js"></script>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-sanitize.min.js"></script>
+
+    <script src="scripts/lib/ui-bootstrap-tpls.min.js"></script>
+
+    <!--Contorllers:-->
+    <script src="scripts/app.js"></script>
+    
+    <script src="scripts/controllers/homescreen.js"></script>
+    <script src="scripts/controllers/header.js"></script>
+    <script src="scripts/controllers/menu.js"></script>
+    <script src="scripts/controllers/contact.js"></script>
+    <script src="scripts/controllers/projects.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+     
+    <script src="scripts/lib/jquery-2.1.4.min.js"></script>
+   
+    <title>Matei Grama</title>
+
+  </head>
+  
+  <body ng-app="myApp">
+    <header id="header" class="cf" 
+            ng-include="'views/header.html'"
+            ng-controller="Header"></header>
+
+    <section id="menu" class="cf" ng-show="showMenu" 
+             ng-include="'views/menu.html'"
+             ng-controller="Menu">
+             <!--ng-init="init()"-->
+      
+
+    </section>
+    <div id="" ng-view="">
+      
+    </div>
+
+
+  </body>
+
+</html>

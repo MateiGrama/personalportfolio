@@ -1,0 +1,149 @@
+<section ng-init="init()">
+	
+	<div id="loading" ng-show="loading">
+		<img id="loadingGif" src="\images\loading.gif"/>
+	</div>
+
+	<div id="projectSection" name="projectSection" ng-show="projectVisibility">
+		<div id="projectSectionText">
+			<h1 id="projectTitle">{{projectTitle}}</h1>
+			<p>{{projectDescription}}</p>
+			<h4>Setting Up the Project</h4>
+			<p>{{setUp}}</p>
+			<h4>Used Tehnologies</h4>
+			<p>{{tech}}</p>
+			<h4>Links</h4>
+			<p ng-bind-html="links"></p>
+		</div>
+		<div id="projectSectionImages">
+			<div ng-bind-html="mainProjectImage"></div>
+
+			<div id="thumbnails" ng-bind-html="thumbnails" compile-template>
+			</div>
+
+		</div>
+	</div>
+	<div id="wrapper">
+		
+
+		<div class="inner">
+			<div id="projectSectionLink">
+				<div ng-show="!projectVisibility">
+					<h1>Mastering C/C++, C#, SQL, Javascript - JQuery and Angular - pretty well,<br/> I aspire to be a full stack developer.</h1>
+					<p>As a Software Engineer, I've been working on different projects in various-sized teams.
+					I got to understand a lot about technologies and programming languages I use, to understand the flows of information and the perspectives of users. If you have an interesting project and need some help, <a href="/#/contact">hire me</a>. Listed below are some of my projects which may convice you how passionate I am about programming.
+					</p>
+				</div>
+			</div>
+			<div ng-show="projectVisibility">
+				<h2>Check the other ones too! </h2>
+			</div>
+
+			<section class="tiles">
+				<article class="style1">
+					<span class="image">
+						<img src="images/pic01.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(0)" >
+						 <h2>{{projectData[0].title}}</h2>
+						<div class="content">
+							<p>{{projectData[0].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style2">
+					<span class="image">
+						<img src="images/pic02.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(1)">
+						<h2>{{projectData[1].title}}</h2>
+						<div class="content">
+							<p>{{projectData[1].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style3">
+					<span class="image">
+						<img src="images/pic03.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(2)">
+						<h2>{{projectData[2].title}}</h2>
+						<div class="content">
+							<p>{{projectData[2].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style4">
+					<span class="image">
+						<img src="images/pic04.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(3)">
+						<h2>{{projectData[3].title}}</h2>
+						<div class="content">
+							<p>{{projectData[3].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style5">
+					<span class="image">
+						<img src="images/pic05.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(4)">
+						<h2>{{projectData[4].title}}</h2>
+						<div class="content">
+							<p>{{projectData[4].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style6">
+					<span class="image">
+						<img src="images/pic06.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(5)">
+						<h2>{{projectData[5].title}}</h2>
+						<div class="content">
+							<p>{{projectData[5].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style2">
+					<span class="image">
+						<img src="images/pic07.jpg" alt="" />
+					</span>
+					<a ng-click="showProject(6)">
+						<h2>{{projectData[6].title}}</h2>
+						<div class="content">
+							<p>{{projectData[6].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				<article class="style3">
+					<span class="image">
+						<img src="images/pic08.jpg" alt="" />
+					</span>
+					<a ng-click="">
+						<h2>{{projectData[7].title}}</h2>
+						<div class="content">
+							<p>{{projectData[7].shortDescription}}</p>
+						</div>
+					</a>
+				</article>
+				
+			</section>
+		</div>
+</div>
+
+<section id="footer" style="text-align:center">
+      <ul class="icons">
+        <li><a href="https://twitter.com/MateiGrama" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://github.com/MateiGrama" class="fa fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://linkedin.com/in/mateigrama" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://www.facebook.com/matheo.dagrama" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="mailto:grama.matei.george@gmail.com" class="fa fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <p class="copyright">&copy; Matei Grama ~2017.</p>
+</section>
+</section>
+<script src="js/skel.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>

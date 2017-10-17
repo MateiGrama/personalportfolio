@@ -1,0 +1,44 @@
+<div id="wrapper" ng-init="init()">
+  <div class="container">
+    <h3>Contact me</h3>
+    <p>I am available for cross-platform cloud-based apps and Windows IoT/Linux embedded projects.  <a href="/#/projects">Here</a> are some of my latest projects and my GitHub profile.</p>
+    <form method="post" action="#" name="myform">
+      <div class="row uniform">
+        <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" ng-required="true" ng-model="name" /></div>
+        <div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" ng-required="true" ng-model="email"/></div>
+      </div>
+      <div class="row uniform">
+        <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" ng-required="true" ng-model="subject" /></div>
+      </div>
+      <div class="row uniform">
+        <div class="12u"><textarea name="message" id="message" placeholder="Message" ng-required="true" ng-model="message" rows="6"></textarea></div>
+      </div>
+
+      <div class="row uniform">
+        <div class="12u">
+          <ul class="actions">
+            <li><!-- <input type="submit" ng-click="mailto:grama.matei.george@gmail.com?subject={{subject}}&body={{message}}" class="special" value="Send message" /></li>
+
+             -->
+             <input type="submit" onClick="alert('Oh, snap! Service unavaible. Please use Email,Twitter or any other way to contact me. Sorry for the inconvenience.')" class="special" value="Send message" /></li>
+             <li><input type="reset" value="Reset Form" /></li>
+          </ul>
+        </div>
+      </div>
+    </form>
+
+    <section id="footer" style="text-align:center">
+      <ul class="icons">
+        <li><a href="https://twitter.com/MateiGrama" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://github.com/MateiGrama" class="fa fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://linkedin.com/in/mateigrama" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://www.facebook.com/matheo.dagrama" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="mailto:grama.matei.george@gmail.com" class="fa fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <p class="copyright">&copy; Matei Grama ~2017.</p>
+    </section>
+
+
+  </div>
+
+</div>

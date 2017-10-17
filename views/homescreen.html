@@ -1,0 +1,91 @@
+
+  <div id="loading" ng-show="loading">
+    <img id="loadingGif" src="\images\loading.gif"/>
+  </div>
+  
+ <div id="wrapper" ng-init="init()">
+  <div id="main">
+
+    <section id="sidebar" class="sidebar1" ng-hide="">
+
+      <!-- Intro -->
+      <section id="intro">
+        <a href="#" class="matei"><img src="../images/matei.jpg" alt="" /></a>
+        <header>
+          <h2>Hi there!</h2>
+          <p>I'm a software engineer curently living in London. Coding is one of my passions and <a href="#projects">here</a> you can see to where this passion has been leading me.</p>
+        </header>
+      </section>
+
+    </section>
+
+    <article class="post">
+      <header>
+        <div class="title">
+          <h2><a href="#">A brief look at my work..</a></h2>
+          <p>I've been developing projects from various programming fields : from web develompent, cross-platform smartphone apps and IoT sollutions.</p>
+        </div>
+      </header>
+
+      <div id="slides_control">
+        <div>
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}">
+              <div class="carousel-caption">
+                <h3>{{slide.mainText}}</h3>
+                <h4>{{slide.text}}</h4>
+              </div>
+
+
+            </slide>
+          </carousel>
+        </div>
+      </div>
+
+      <footer>
+        <ul class="actions centerBtn">
+          <li class="centerBtn"><a  id="continueRead" href="#projects" class="button centerBtn" style="text-align:center;">Continue reading..</a></li>
+        </ul>
+
+      </footer>
+    </article>
+  </div>
+
+
+  <section id="sidebar" class="sidebar2" ng-hide="">
+
+    <!-- Intro -->
+    <section id="intro">
+      <a href="#" class="matei"><img src="../images/matei.jpg" alt="" /></a>
+      <header>
+        <h2>Hi there!</h2>
+        <p>I'm a software engineer curently living in London. Coding is one of my passions and <a href="#projects">here</a> you can see to where this passion has been leading me.</p>
+      </header>
+    </section>
+
+    <section id="footer">
+      <ul class="icons">
+        <li><a href="https://twitter.com/MateiGrama" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="https://github.com/MateiGrama" class="fa fa-github"><span class="label">Github</span></a></li>
+        <li><a href="https://linkedin.com/in/mateigrama" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+        <li><a href="https://www.facebook.com/matheo.dagrama" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+        <li><a href="mailto:grama.matei.george@gmail.com" class="fa fa-envelope"><span class="label">Email</span></a></li>
+
+      </ul>
+      <p class="copyright">&copy; Matei Grama ~2017.</p>
+    </section>
+
+
+  </section>
+  <section id="footer" class="footer1">
+    <ul class="icons">
+      <li><a href="https://twitter.com/MateiGrama" class="fa fa-twitter"><span class="label">Twitter</span></a></li>
+      <li><a href="https://github.com/MateiGrama" class="fa fa-github"><span class="label">Github</span></a></li>
+      <li><a href="https://linkedin.com/in/mateigrama" class="fa fa-linkedin"><span class="label">Linkedin</span></a></li>
+      <li><a href="https://www.facebook.com/matheo.dagrama" class="fa fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="mailto:grama.matei.george@gmail.com" class="fa fa-envelope"><span class="label">Email</span></a></li>
+    </ul>
+    <p class="copyright">&copy; Matei Grama ~2017.</p>
+  </section>
+</div>
