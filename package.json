@@ -2,9 +2,9 @@
   "name": "personalportfolio",
   "version": "0.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "web.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
