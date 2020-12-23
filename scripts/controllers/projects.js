@@ -44,7 +44,7 @@ myApp.controller('Projects', function ($scope, $rootScope, $location,$window,$sc
              description:"Programs for Raspberry Pi created to read the values from a MPU6050 and convert them to valuable data for interpreting the device's movement: using the Kalman filter, the rotation angles are calculated; those angles are used to 'rotate' the 3-axis-acceleration trihedral using rotation matrices, in order to obtain instantaneous sets of accelerations independent from the device's orientation. The project is part of a more complex study that targets the modification of the dynamic parameters during the evolution of certain neurological diseases.",
              setUp:"To set up the project, a Raspberry Pi powered by a Linux distribution, a MPU6050, a LED and a button are needed.",
              tech:"Raspberry Pi - MPU6050 - C++",
-             links:"<a href='https://github.com/MateiGrama/mpu6050app'>Github</a>  -  <a href='https://1drv.ms/b/s!Am1FK_5miPXj3lkHl68Mt_fEzBf5'>Documentation</a>  -  <a href='http://www.icpe-ca.ro/activitate-stiintifica/bmne-june-2017.pdf'>Article (pg.27)</a>",
+             links:"<a href='https://github.com/MateiGrama/mpu6050app'>Github</a>  -  <a href='https://1drv.ms/b/s!Am1FK_5miPXj3lkHl68Mt_fEzBf5'>Documentation</a>  -  <a href='https://www.icpe-ca.ro/activitate-stiintifica/bmne-june-2017.pdf'>Article (pg.27)</a>",
              photosNumber: 3
            },
            { 
