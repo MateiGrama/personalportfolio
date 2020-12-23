@@ -95,7 +95,7 @@ myApp.controller('Projects', function ($scope, $rootScope, $location,$window,$sc
           ];
     $scope.projectData.forEach(function(item, index){
       for(var i=1;i<= item.photosNumber;i++)
-        $scope.imageLocations.push("images/"+item.title+"/"+i+".jpg");
+        $scope.imageLocations.push("images/"+item.title.replaceAll(" ","")+"/"+i+".jpg");
           });
 
     if(!$rootScope.projectsCached)
@@ -137,7 +137,7 @@ myApp.controller('Projects', function ($scope, $rootScope, $location,$window,$sc
         $scope.projectVisibility = !$scope.projectVisibility;
 
 		  $scope.lstId=id;
-	  	$scope.projectTitle= $scope.projectData[id].title;
+	  	$scope.projectTitle= $scope.projectData[id].title.replace(" ","");
 	  	$scope.projectDescription=$scope.projectData[id].description;
       $scope.setUp= $scope.projectData[id].setUp;
       $scope.tech= $scope.projectData[id].tech;
@@ -149,7 +149,7 @@ myApp.controller('Projects', function ($scope, $rootScope, $location,$window,$sc
   };
 
   $scope.changeImage = function(id){
-    var mainImageTag ='<img id="mainProjectImage"  src="/images/'+$scope.projectData[$scope.lstId].title+'/'+ id +'.jpg"></img>'; 
+    var mainImageTag ='<img id="mainProjectImage"  src="/images/'+$scope.projectData[$scope.lstId].title.replace(" ","")+'/'+ id +'.jpg"></img>'; 
     $scope.mainProjectImage=$sce.trustAsHtml(mainImageTag);
     $scope.selectedImage= id;
   }
@@ -157,7 +157,7 @@ myApp.controller('Projects', function ($scope, $rootScope, $location,$window,$sc
   $scope.generateThumb= function(nr){
     var thumbTags="";
     for(i=1;i<=nr;i++){
-      thumbTags+= '<img class="thumbnail" ng-class="{colorBorder: selectedImage==' + i + ', initialBorder:selectedImage!='+i+' }" ng-click="changeImage('+ i +')"src ="/images/'+$scope.projectData[$scope.lstId].title+'/'+i+'_tn.jpg"></img>'+'\n'; 
+      thumbTags+= '<img class="thumbnail" ng-class="{colorBorder: selectedImage==' + i + ', initialBorder:selectedImage!='+i+' }" ng-click="changeImage('+ i +')"src ="/images/'+$scope.projectData[$scope.lstId].title.replace(" ","")+'/'+i+'_tn.jpg"></img>'+'\n'; 
     }
     $scope.thumbnails=$sce.trustAsHtml(thumbTags);
     
