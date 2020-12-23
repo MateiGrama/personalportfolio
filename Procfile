@@ -1,1 +1,1 @@
-web: sh target/bin/personalportfolio
+web: http-server
