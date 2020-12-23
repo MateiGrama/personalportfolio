@@ -235,7 +235,7 @@
 
                         // on Ben Nadel's original blog by user Adriaan:
 
-                        // https://www.bennadel.com/members/11887-adriaan.htm
+                        // http://www.bennadel.com/members/11887-adriaan.htm
 
                         var image = angular.element( new Image() )
 
